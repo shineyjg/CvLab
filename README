@@ -1,0 +1,48 @@
+# Vincent Yang's CV lab
+
+Vincent Yang's CV lab (face detecting, face comparing, Chinese plate number recognition)
+
+https://github.com/shineyjg
+
+# submodules
+
+## CvWebServer
+  the web server of CV lab, you can upload images by http server
+  https://github.com/shineyjg/CvWebServer
+
+## CvFrontend
+  the web ui of CvWebServer
+  https://github.com/shineyjg/CvFrontend
+
+## facenet
+  Face Recognition using Tensorflow
+  https://github.com/shineyjg/facenet
+
+## HyperLPR
+  High Accuracy Chinese Plate Recognition Framework
+  https://github.com/shineyjg/HyperLPR
+
+# run dependency
+  redis
+  the redis parameters must be configured in submodules CvWebServer, facenet and HyperLPR, see related README in each submodule
+
+# run
+in terminal 1:
+  cd CvWebServer
+  node main.js
+
+in terminal 2:
+  cd facenet
+  python src/myface/detect.py
+
+in terminal 3 (the following program needs almost 1.8G memory):
+  cd facenet
+  python src/myface/compare.py
+
+in terminal 4:
+  cd HyperLPR
+  python main.py
+
+now you can open a browser with url: http://127.0.0.1:8100, enjoy with it.
+![face compare demo](face_compare.png)
+![chinese plate number recognition](chinese_plate_number_recognition.png)

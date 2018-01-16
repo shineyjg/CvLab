@@ -1,0 +1,12 @@
+[submodule "CvWebServer"]
+	path = CvWebServer
+	url = https://github.com/shineyjg/CvWebServer
+[submodule "CvFrontend"]
+	path = CvFrontend
+	url = https://github.com/shineyjg/CvFrontend
+[submodule "facenet"]
+	path = facenet
+	url = https://github.com/shineyjg/facenet
+[submodule "HyperLPR"]
+	path = HyperLPR
+	url = https://github.com/shineyjg/HyperLPR
