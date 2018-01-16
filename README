@@ -5,6 +5,11 @@ Vincent Yang's CV lab (face detecting, face comparing, Chinese plate number reco
 https://github.com/shineyjg
 
 # submodules
+don't forget update the following submodules after clone:
+  git clone https://github.com/shineyjg/CvLab
+  cd CvLab
+  git submodule init
+  git submodule update
 
 ## CvWebServer
   the web server of CV lab, you can upload images by http server
@@ -24,7 +29,7 @@ https://github.com/shineyjg
 
 # run dependency
   redis
-  the redis parameters must be configured in submodules CvWebServer, facenet and HyperLPR, see related README in each submodule
+  the redis parameters must be configured in the submodules: CvWebServer, facenet and HyperLPR, see related README in each submodule
 
 # run
 in terminal 1:
